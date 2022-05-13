@@ -29,7 +29,8 @@ target_link_libraries(${TARGET_NAME}
     PUBLIC
         ""
     PRIVATE 
-        ""
+        paho-mqttpp3
+        paho-mqtt3as
 )
 
 

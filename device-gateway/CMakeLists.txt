@@ -1,7 +1,9 @@
 set(TARGET_NAME "device-gateway")
 set(TARGET_VERSION "0.1")
 
-set(SOURCES_SERVER 
+set(SOURCES_SERVER
+        "data_handler.cpp"
+        "mqtt_consumer.cpp"
         "main.cpp"
 )
 
@@ -29,7 +31,8 @@ target_link_libraries(${TARGET_NAME}
     PUBLIC
         ""
     PRIVATE 
-        ""
+        paho-mqttpp3
+        paho-mqtt3as
 )
 
 
